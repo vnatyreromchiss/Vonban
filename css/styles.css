@@ -83,6 +83,24 @@ body {
         max-width: none;
     }
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FBF8F8; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0B4F47; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0C5C53; 
+  }
 /* -------------------------------- */
 .header {
     position: absolute;
