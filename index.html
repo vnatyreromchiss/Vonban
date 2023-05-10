@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Inter&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/styles.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" type="image/x-icon" href="./img/favicon/Favicon.png">
     <title>Vonban</title>
 </head>
@@ -58,15 +60,15 @@
                         <div class="about__container">
                             <div class="about__title-block">
                                 <div class="about__title-block__left-side">
-                                    <h3 class="about__title title">About us</h3>
+                                    <h3 class="about__title title" data-aos="fade-right" >About us</h3>
                                     <hr class="about__title-line about__line">
                                 </div>
                                 <div class="about__title-block__right-side">
-                                    <p class="about__text">VONBAN focuses on financial inclusion to create a more equitable and accessible financial system that benefits everyone, regardless of their background or financial situation.</p>
+                                    <p class="about__text" data-aos="fade-left">VONBAN focuses on financial inclusion to create a more equitable and accessible financial system that benefits everyone, regardless of their background or financial situation.</p>
                                 </div>
                             </div>
                             <div class="about__content-block">
-                                <div class="about__content-block__left-side">
+                                <div class="about__content-block__left-side" data-aos="fade-right">
                                     <p class="about__content-block__left-side__first-text text">
                                         VONBAN focuses on financial inclusion to create a more equitable and accessible financial system that benefits everyone, regardless of their background or financial situation. We facilitate transactions around the world through our deep practical industry knowledge.
                                     </p>
@@ -76,7 +78,7 @@
                                     </p>
                                     <hr class="about__content-block__left-side__second-line about__line">
                                 </div>
-                                <div class="about__content-block__right-side">
+                                <div class="about__content-block__right-side" data-aos="fade-left">
                                     <img class="about__content-block__right-side__image" src="./img/main/about/clock.jpg" alt="">
                                     <img class="about__content-block__right-side__image-mob" src="./img/main/about/clock-mob.jpg" alt="">
                                 </div>
@@ -85,15 +87,133 @@
                 </section> 
                 <section class="facts">
                     <div class="facts__container">
-                        <div class="facts__title-block">
+                        <div class="facts__title-block" data-aos="fade-right">
                             <h3 class="facts__title title">Interesting Facts</h3>
                         </div>
+                        <div class="facts_container">
+                            <div class="facts_wrapper">
+                              <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+                                <div class="facts__slides__arrow_button" id="left">
+                                    <img src="/img/icons/arrow_icon_left.png">
+                                </div>
+                              <ul class="carousel">
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            1Our team comprises of regulatory trained experts who have experienced most business sectors inside out with a practical know-how 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            2Our team have over two decades of experience in cross border business management, business consultancy, and business structuring 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            3Our team have solved and consulted over 1000 complex international business cases in the last decade alone
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            4 O11111usiness sectors inside out with a practical know-how 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            5 22222ss management, business consultancy, and business structuring 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            6 O33333l business cases in the last decade alone
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="facts_card">
+                                    <div class="facts__slider__slides__slide">
+                                        <p>
+                                            7 O44ex international business cases in the last decade alone
+                                        </p>
+                                    </div>
+                                </li>
+                              </ul>
+                              <div class="facts__slides__arrow_button" id="right">
+                                <img src="/img/icons/arrow_icon_right.png">
+                            </div>
+                              <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+                            </div>
+                    
+                            <div class="facts__dots">
+                                <div class="facts__dots__conatiner">
+                                    <div class="facts__dots__conatiner__dot active_dot" id="0"></div>
+                                    <div class="facts__dots__conatiner__dot" id="1"></div>
+                                    <div class="facts__dots__conatiner__dot" id="2"></div>
+                                    <div class="facts__dots__conatiner__dot" id="3"></div>
+                                    <div class="facts__dots__conatiner__dot" id="4"></div>
+                                    <div class="facts__dots__conatiner__dot" id="5"></div>
+                                    <div class="facts__dots__conatiner__dot" id="6"></div>
+                                </div>
+                            </div>
+                    
+                        </div>
+
+                        <div class="reviews__swiper swiper-reviews swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-reviews__wrapper swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="swiper-reviews__slide slide-swiper-rewiews swiper-slide">
+                                    <!-- <div class="slide-swiper-rewiews__picture">
+                                        <div class="slide-swiper-rewiews__image">
+                                            <img src="img/main/reviews/01.jpg" alt="reviews">
+                                        </div>
+                                    </div> -->
+                                    <div class="slide-swiper-rewiews__body">
+                                        <div class="slide-swiper-rewiews__text">
+                                            <p>Our team have over two decades of experience in cross border business management, business consultancy, and business structuring</p>
+                                        </div>
+                                        <!-- <div class="slide-swiper-rewiews__author">
+                                            <div class="slide-swiper-rewiews__name">Ryan Wels</div>
+                                            <div class="slide-swiper-rewiews__position">PROFESSIONAL GUITARIST</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="swiper-reviews__slide slide-swiper-rewiews swiper-slide">
+                                    <!-- <div class="slide-swiper-rewiews__picture">
+                                        <div class="slide-swiper-rewiews__image">
+                                            <img src="img/main/reviews/01.jpg" alt="reviews">
+                                        </div>
+                                    </div> -->
+                                    <div class="slide-swiper-rewiews__body">
+                                        <div class="slide-swiper-rewiews__text">
+                                            <p>Our team have over two decades of experience in cross border business management, business consultancy, and business structuring</p>
+                                        </div>
+                                        <!-- <div class="slide-swiper-rewiews__author">
+                                            <div class="slide-swiper-rewiews__name">Ryan Wels</div>
+                                            <div class="slide-swiper-rewiews__position">PROFESSIONAL GUITARIST</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                           
                         
+                            <!-- If we need pagination -->
+                            <div class="swiper-reviews__pagination swiper-pagination"></div>
+                        </div>
                     </div>
                 </section>
                 <section class="offer">
                         <div class="offer__container">
-                            <div class="offer__title-block">
+                            <div class="offer__title-block" data-aos="fade-up">
                                 <h3 class="offer__title title">What we offer</h3>
                             </div>
                             <div class="offer__cards-block">
@@ -147,11 +267,162 @@
                 </section>
             </div>
             <section class="different">
-
+                <div class="slider_container">
+                    <div class="slider">
+                        <div class="slider__content">
+                            <div class="slider__content__title_mobile" data-aos="fade-right">
+                                <h2 class="slider__content__title-mob title">What Makes Us Different</h2>
+                            </div>
+                            <div class="slider__content__title_desktop" data-aos="fade-right">
+                                <h2 class="slider__content__title_des title">What Makes Us Different</h2>
+                            </div>
+                            <div class="slider__content__tabs">
+                                <div class="slider__content__tabs__tab active_tab">
+                                    <p class="slider__content__paragraph">Exclusive <br/>Services</p>
+                                </div>
+                                <div class="slider__content__tabs__tab">
+                                    <p class="slider__content__paragraph">Unique capabilities</p>
+                                </div>
+                                <div class="slider__content__tabs__tab">
+                                    <p class="slider__content__paragraph">Independent</p>
+                                </div>
+                                <div class="slider__content__tabs__tab">
+                                    <p class="slider__content__paragraph">Staying<br/> Up-to-Date</p>
+                                </div>
+                                <div class="slider__content__tabs__tab">
+                                    <p class="slider__content__paragraph">Secured</p>
+                                </div>
+                            </div>
+                            <!-- <div class="slider__content__title_desktop">
+                                <h2 class="slider__content__title_des title">What Makes Us Different</h2>
+                            </div> -->
+                            <div class="slider__content__list_container" data-aos="fade-right">
+                                <!-- 1 -->
+                                <div class="slider__content__list show_list">
+                                    <ul class="slider__content__ul">
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Vonban is an invitation only platform through<br/> our associate partners.  
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                We do not market any services in any<br/> jurisdiction. 
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Our business exists purely on word-of-mouth<br/> basis
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 2 -->
+                                <div class="slider__content__list hide_list">
+                                    <ul class="slider__content__ul">
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                We are an extension of our client&#x2019s and our<br/> associate partners&#x2019 teams  
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Our team are practical experts of the regulated<br/> financial services who know the industry inside<br/> out 
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                We provide a dedicated compliance and risk<br/> team to help clients with their onboarding and<br/> relationship life-cycle
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 3 -->
+                                <div class="slider__content__list hide_list">
+                                    <ul class="slider__content__ul">
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Vonban is an invitation only platform through our associate partners.  
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                We do not market any services in any jurisdiction. 
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Our business exists purely on word-of-mouth basis
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 4 -->
+                                <div class="slider__content__list hide_list">
+                                    <ul class="slider__content__ul">
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Vonban is sdflskl;pasldpafugh our associate partners.  
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                We do not maradskfajls;adn. 
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Our business existsasdkjhalskdkjwl
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 5 -->
+                                <div class="slider__content__list hide_list">
+                                    <ul class="slider__content__ul">
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Vonban is an invitatsdfhkasjdl;we our associate partners.  
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                We do not mawghdol'ko'kopwmdowmn. 
+                                            </p>
+                                        </li>
+                                        <li class="slider__content__li">
+                                            <p class="slider__content__paragraph">
+                                                Our business sdfskjhehfbjweklis
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__image">
+                            <div class="slider__image__container">
+                                <img class="slider__image__img show_img" src="/img/slider/slider_image_1.png"/>
+                                <img class="slider__image__img hide_img" src="/img/slider/slider_image_2.png"/>
+            
+                                <img class="slider__image__img hide_img" src="/img/slider/slider_image_2.png"/>
+                                <img class="slider__image__img hide_img" src="/img/slider/slider_image_2.png"/>
+                                <img class="slider__image__img hide_img" src="/img/slider/slider_image_2.png"/>
+                            </div>
+                        </div>
+                        <div class="slider__mobile_image">
+                            <img class="slider__mobile_image__img show_mobile_img" src="/img/slider/slider_image_2.png">
+            
+                            <img class="slider__mobile_image__img hide_mobile_img" src="/img/slider/slider_image_1.png">
+                            <img class="slider__mobile_image__img hide_mobile_img" src="/img/slider_mobile/slider_mobile_img_1.png">
+                            <img class="slider__mobile_image__img hide_mobile_img" src="/img/slider_mobile/slider_mobile_img_1.png">
+                            <img class="slider__mobile_image__img hide_mobile_img" src="/img/slider_mobile/slider_mobile_img_1.png">
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="onboarding">
                 <div class="onboarding__container">
-                    <div class="onboarding__title-block">
+                    <div class="onboarding__title-block" data-aos="fade-up">
                         <h3 class="onboarding__title title">Client Onboarding</h3>
                     </div>
                     <div class="onboarding__wrapper">
@@ -180,10 +451,13 @@
             <section class="contact">
                 <div class="contact__container">
                     <div class="contact__content-block">
-                        <h3 class="contact__content-block__title">Want to join us as associate?</h3>
+                        <div class="contact__content-block__image-block">
+                            <img src="./img/main/contact/background-mob.jpg" alt="" class="contact__content-block__image">
+                        </div>
+                        <h3 class="contact__content-block__title" data-aos="fade-right">Want to join us as associate?</h3>
                         <hr class="contact__content-block__line">
 
-                        <div class="contact__content-block__button-block">
+                        <div class="contact__content-block__button-block" data-aos="fade-right">
                             <a href="#" class="contact__content-block__button">Contact Us</a>
     
                         </div>
@@ -192,7 +466,7 @@
             </section>
             <section class="news">
                 <div class="news__container">
-                    <div class="news__title-block">
+                    <div class="news__title-block" data-aos="fade-up">
                         <h3 class="news__title title">News & Articles</h3>
                     </div>
                     <!-- 559 -->
@@ -210,12 +484,59 @@
                             <p class="news__card__text">Our Annual Results are underpinned by good, broad-based profit generation around the world, says Group Chief Executive Noel Quinn.</p>
                         </div>
                     </div>
-                    <div class="news__button-block">
+                    <div class="news__slider-block">
+                        <div class="reviews__swiper swiper-reviews swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-reviews__wrapper swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="swiper-reviews__slide slide-swiper-rewiews swiper-slide">
+                                    <!-- <div class="slide-swiper-rewiews__picture">
+                                        <div class="slide-swiper-rewiews__image">
+                                            <img src="img/main/reviews/01.jpg" alt="reviews">
+                                        </div>
+                                    </div> -->
+                                    <div class="slide-swiper-rewiews__body slide-swiper-rewiews__body-news-1">
+                                        <div class="slide-swiper-rewiews__text">
+                                            <h4 class="news__card__title">Good performances from our businesses worldwide.</h4>
+                                            <p class="news__card__text">Our Annual Results are underpinned by good, broad-based profit generation around the world, says Group Chief Executive Noel Quinn.</p>
+                                        </div>
+                                        <!-- <div class="slide-swiper-rewiews__author">
+                                            <div class="slide-swiper-rewiews__name">Ryan Wels</div>
+                                            <div class="slide-swiper-rewiews__position">PROFESSIONAL GUITARIST</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="swiper-reviews__slide slide-swiper-rewiews swiper-slide">
+                                    <!-- <div class="slide-swiper-rewiews__picture">
+                                        <div class="slide-swiper-rewiews__image">
+                                            <img src="img/main/reviews/01.jpg" alt="reviews">
+                                        </div>
+                                    </div> -->
+                                    <div class="slide-swiper-rewiews__body slide-swiper-rewiews__body-news-2">
+                                        <div class="slide-swiper-rewiews__text">
+                                            <h4 class="news__card__title">Good performances from our businesses worldwide.</h4>
+                                            <p class="news__card__text">Our Annual Results are underpinned by good, broad-based profit generation around the world, says Group Chief Executive Noel Quinn.</p>
+                                        </div>
+                                        <!-- <div class="slide-swiper-rewiews__author">
+                                            <div class="slide-swiper-rewiews__name">Ryan Wels</div>
+                                            <div class="slide-swiper-rewiews__position">PROFESSIONAL GUITARIST</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        
+                            <!-- If we need pagination -->
+                            <div class="swiper-reviews__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="news__button-block" data-aos="fade-up">
                         <a href="#" class="news__button">More news</a>
                     </div>
-                    <div class="news__text-block">
+                    <div class="news__text-block" data-aos="fade-up">
                         <p class="news__text">The information contained in this website is for general information purposes only. The information is provided by [business name] and while we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
                     </div>
+
                 </div>
             </section>
         </main>
@@ -262,6 +583,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
