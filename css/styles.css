@@ -83,9 +83,9 @@ body {
         max-width: none;
     }
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
-  } */
+  }
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -262,6 +262,9 @@ li .menu__item .header__contacts {
 }
 /* 991.98px */
 @media (max-width:1065px) { 
+    /* ::-webkit-scrollbar {
+        width: 0;
+      } */
     /* 767 */
     .menu__body {
         /* display: none; */
@@ -816,6 +819,7 @@ li .menu__item .header__contacts {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
   }
   
   .facts__slides__arrow_button img{
@@ -1279,6 +1283,7 @@ li .menu__item .header__contacts {
 
 .slider__content__list_container{
     position: relative;
+    max-width: 800px;
 }
 
 .slider__content__list{
@@ -1721,7 +1726,9 @@ li .menu__item .header__contacts {
         margin-top: 10px;
         transition: .5s;
     }
-
+    .slider__content__list_container {
+        max-width: 700px;
+    }
 }
 .slider__content__title_desktop {
     margin-top: 20px;
@@ -2103,14 +2110,22 @@ li .menu__item .header__contacts {
         background-image: url("../img/main/news/cards/02.png");
         width: 385px;
     }
+    .slide-swiper-rewiews__body-news-3 {
+        background-image: url("../img/main/news/cards/03.png");
+        width: 385px;
+    }
 }
 @media (max-width:767.98px) {
     .slide-swiper-rewiews__body-news-1 {
-        background-image: url("../img/main/news/cards/02-mob.png");
+        background-image: url("../img/main/news/cards/01-mob.png");
         width: 272px;
     }
     .slide-swiper-rewiews__body-news-2 {
         background-image: url("../img/main/news/cards/02-mob.png");
+        width: 272px;
+    }
+    .slide-swiper-rewiews__body-news-3 {
+        background-image: url("../img/main/news/cards/03-mob.png");
         width: 272px;
     }
     
@@ -2291,7 +2306,11 @@ li .menu__item .header__contacts {
 }
 
 
-
+@media (max-width:1065px){
+    ::-webkit-scrollbar {
+       display: none;
+      }
+}
 
 
 .cookie_wrapper {
