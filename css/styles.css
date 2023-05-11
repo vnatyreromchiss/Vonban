@@ -100,6 +100,7 @@ body {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #0C5C53; 
+    transition: 0.3s;
   }
 /* -------------------------------- */
 .header {
@@ -215,6 +216,7 @@ li .menu__item .header__contacts {
 }
 .menu__link:hover {
     color:  #F6CB73;
+    transition: 0.3s;
     /* color:#8B02CC; */
 }
 /* @media (max-width:1300px) {
@@ -332,15 +334,19 @@ li .menu__item .header__contacts {
 }
 .header__button-login:hover {
     background:#D1AE66;
+    transition: 0.3s;
 }
 .header__button-register:hover {
     background:#B69657;
+    transition: 0.3s;
 }
 .header__login:hover {
     background:#D1AE66;
+    transition: 0.3s;
 }
 .header__register:hover {
     background:#B69657;
+    transition: 0.3s;
 }
 .header__register {
     display: none;
@@ -1206,6 +1212,7 @@ li .menu__item .header__contacts {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
 }
 
 .slider{
@@ -1226,7 +1233,7 @@ li .menu__item .header__contacts {
 .slider__content__tabs{
     display: flex;
     flex-direction: row;
-    padding-right: 50px;
+    /* padding-right: 50px; */
 }
 
 .slider__content__tabs__tab{
@@ -1348,6 +1355,7 @@ li .menu__item .header__contacts {
 @media (max-width: 440px){
     .slider_container{
         flex-wrap: wrap;
+        padding: 0 15px;
     }
 
     .slider{
@@ -1462,6 +1470,7 @@ li .menu__item .header__contacts {
 @media (min-width: 441px) and (max-width: 768px){
     .slider_container{
         flex-wrap: wrap;
+        padding: 0 15px;
     }
     .slider__content__list {
         margin-bottom: 50px;
@@ -1572,7 +1581,7 @@ li .menu__item .header__contacts {
 
 @media (min-width: 769px) and (max-width: 991px){
     .slider_container{
-        
+        padding: 0 15px;
         flex-wrap: wrap;
     }
     .slider__content__list {
@@ -1685,6 +1694,9 @@ li .menu__item .header__contacts {
 }
 
 @media (min-width: 992px) and (max-width: 1280px){
+    .slider__container {
+        padding: 0 15px;
+    }
     .slider__content__tabs{
         padding-right: 0px;
     }
@@ -1697,7 +1709,7 @@ li .menu__item .header__contacts {
         align-items:center;
         border: 5px solid rgba(11, 79, 71, 0.1);
         height: 100px;
-        width: 100px;
+        width: 115px;
         border-top: none;
         border-right: none;
         border-left: none;
@@ -1705,8 +1717,11 @@ li .menu__item .header__contacts {
         font-weight: 600;
         transition: .4s;
         cursor: pointer;
+        
     }
-
+    .slider__content__tabs__tab:not(:last-child) {
+        padding-right: 10px;
+    }
     .active_tab{
         font-size: 24px;
         color: #000;
@@ -1886,6 +1901,7 @@ li .menu__item .header__contacts {
 }
 .contact__content-block__button:hover {
     background:#0C5C53;
+    transition: 0.3s;
 }
 .contact__container {
 }
@@ -2085,6 +2101,7 @@ li .menu__item .header__contacts {
 }
 .news__button:hover {
     background:#0C5C53;
+    transition: 0.3s;
 }
 .news__text {
     
@@ -2300,9 +2317,13 @@ li .menu__item .header__contacts {
 }
 .footer__right-side__button-login:hover {
     background:#FBF8F8;
+    color: #002828;
+    transition: 0.3s;
 }
 .footer__right-side__button-register:hover {
     background:#E8E8E8;
+    color: #002828;
+    transition: 0.3s;
 }
 
 
@@ -2355,6 +2376,7 @@ li .menu__item .header__contacts {
   }
   .cookie_data p a:hover {
     text-decoration: underline;
+    transition: 0.3s;
   }
   .cookie_wrapper .cookie_buttons {
     margin-top: 16px;
@@ -2374,6 +2396,7 @@ li .menu__item .header__contacts {
   }
   .cookie_buttons #acceptBtn:hover {
     background-color:rgb(7, 52, 47);
+    transition: 0.3s;
   }
   #declineBtn {
     border: 2px solid rgba(11, 79, 71, 1);
@@ -2383,6 +2406,7 @@ li .menu__item .header__contacts {
   #declineBtn:hover {
     background-color: rgba(11, 79, 71, 1);
     color: #fff;
+    transition: 0.3s;
   }
   
   @media (max-width: 440px){
@@ -2394,4 +2418,8 @@ li .menu__item .header__contacts {
       .cookie_wrapper.show_cookie {
           right: 0px;
       }
+  }
+  .footer__contact-link:hover {
+    color: #E1E1E1;
+    transition: 0.3s;
   }
